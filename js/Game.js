@@ -4,7 +4,7 @@
 class Game{
     constructor(){
         this.missed = 0;
-        this.phrases = ['first phrase', 'dingus mingus'];
+        this.phrases = ['First phrase', 'Dingus mingus', 'SomeBODY Once Told Me'];
         this.activePhrase = null;
     }
     startGame(){

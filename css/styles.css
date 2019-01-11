@@ -58,8 +58,8 @@ button {
   -o-transition: var(--transition);
   transition: var(--transition);
   cursor: pointer;
+  box-shadow: -10px -10px;
 }
-
 #btn__reset {
 	width: 200px;
 	margin: 0 auto;
@@ -124,7 +124,6 @@ button {
 
 
 /* Keyboard */
-
 .keyrow {
   display: flex;
   justify-content: center;
@@ -138,6 +137,7 @@ button {
 }
 
 .wrong {
+  box-shadow: -10px -10px;
   background: #f7a964;
   color: #FFFFFF;
 }
