@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
 
 /* Variables */
-
 :root {
   --color-win: #78CF82;
   --color-lose: #D94545;
@@ -58,7 +57,6 @@ button {
   -o-transition: var(--transition);
   transition: var(--transition);
   cursor: pointer;
-  box-shadow: -10px -10px;
 }
 #btn__reset {
 	width: 200px;
@@ -124,20 +122,22 @@ button {
 
 
 /* Keyboard */
+
 .keyrow {
   display: flex;
   justify-content: center;
 }
 
+.key{
+  box-shadow: -5px -5px rgb(90, 90, 90);
+}
 .chosen {
   background: #3a3f58;
   border-radius: 5px;
   font-size: var(--font-size-medium);
   color: #FFFFFF;
 }
-
 .wrong {
-  box-shadow: -10px -10px;
   background: #f7a964;
   color: #FFFFFF;
 }
