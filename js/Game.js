@@ -4,7 +4,7 @@
 class Game{
     constructor(){
         this.missed = 0;
-        this.phrases = ['First phrase', 'Dingus mingus', 'SomeBODY Once Told Me'];
+        this.phrases = ['A diamond in the rough', 'Hands down', 'SomeBODY Once Told Me'];
         this.activePhrase = null;
     }
     startGame(){
@@ -73,10 +73,10 @@ class Game{
         overlay.style.display = '';
         if(won){
             overlay.className = 'win';
-            message.textContent = 'Congrats, You Won! Play Again?';
+            message.textContent = `Congrats, You Won! The phrase was "${this.activePhrase}". Play Again?`;
         }else{
             overlay.className = 'lose';
-            message.textContent = 'Sorry, You Lost! Play Again?';
+            message.textContent = `Sorry, You Lost! The phrase was "${this.activePhrase}". Play Again?`;
         }
         document.getElementById('btn__reset').textContent = 'Play Again'
 
